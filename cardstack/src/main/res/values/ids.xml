@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="fling_view_back" />
+    <item type="id" name="card" />
+    <item type="id" name="fling_view_center" />
+    <item type="id" name="mask_view" />
+    <item type="id" name="fling_view_front" />
+    <item type="id" name="slide_view" />
+</resources>

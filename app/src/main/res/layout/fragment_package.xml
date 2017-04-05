@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stackcard="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_blur"
+        android:id="@+id/bg_avatar"/>
+R
+    <ImageView
+        android:background="#7f000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.netease.cardstack.StackLayout
+        android:id="@+id/feature_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        stackcard:layoutId="item_card"></com.netease.cardstack.StackLayout>
+
+</RelativeLayout>

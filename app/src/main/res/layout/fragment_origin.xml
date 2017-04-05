@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_blur"
+        android:id="@+id/bg_avatar"/>
+    <ImageView
+        android:background="#7f000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/feature_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.netease.cardstack.stack.view.Layer3DLayout
+            android:id="@+id/fling_view_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" >
+
+            <include
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/item_card"
+                />
+        </com.netease.cardstack.stack.view.Layer3DLayout>
+
+        <com.netease.cardstack.stack.view.Layer3DLayout
+            android:id="@+id/fling_view_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" >
+
+            <include
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/item_card"
+                />
+        </com.netease.cardstack.stack.view.Layer3DLayout>
+
+        <com.netease.cardstack.stack.view.MaskView
+            android:id="@+id/mask_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <com.netease.cardstack.stack.view.Layer3DLayout
+            android:id="@+id/fling_view_front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" >
+
+            <include
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/item_card"
+                />
+        </com.netease.cardstack.stack.view.Layer3DLayout>
+
+        <com.netease.cardstack.stack.view.LayerGestureView
+            android:id="@+id/slide_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
